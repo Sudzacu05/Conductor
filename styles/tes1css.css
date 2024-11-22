@@ -1,0 +1,744 @@
+html {
+  background-color: #E6E7ED;
+  scroll-behavior: smooth; /* Добавляем плавный скролл */
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #E6E7ED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.All{
+  width: 100%;
+  max-width: 1460px;
+}
+
+.Shapka {
+  width: 100%;
+  max-width: 1550px;
+  background-color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.button, .LogIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 1000px;
+  max-width: 1000px;
+}
+
+.madetours button, .currentprograms button, .reviews button, .registration button{
+  background-color: black;
+}
+
+.LogIn {
+  margin-right: 30px;
+}
+
+.button > div, .LogIn > div {
+  margin: 0 10px;
+}
+
+.button button, .LogIn button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.LogIn .login button {
+  background-color: #E6E7ED;
+  color: black;
+}
+
+.Grey {
+  width: 100%;
+  max-width: 1550px;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first {
+  width: 100%;
+  max-width: 1050px;
+  height: auto;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text {
+  align-items: center;
+  width: 400px;
+  max-width: 600px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.onetext, .twotext {
+  text-align: center;
+}
+
+.onetext h1 {
+  color: black;
+  font-size: 30px;
+}
+
+.twotext h5 {
+  color: rgba(0, 0, 0, 0.284);
+}
+
+.Paster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.FotoL img {
+  margin-top: 100px;
+  width: 200px;
+}
+
+.FotoR img {
+  width: 200px;
+}
+
+.Paste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+.Pastebutton button {
+  background-color: blueviolet;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.Paste .TextPaste {
+  width: 150px;
+  height: 20px;
+}
+
+.TextPaste h6 {
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Shapka {
+    height: auto;
+    padding: 10px;
+  }
+
+  .button, .LogIn {
+    flex-direction: column;
+  }
+
+  .button > div, .LogIn > div {
+    margin: 10px 0;
+  }
+
+  .FotoL, .FotoR {
+    width: 100%;
+  }
+
+  .first {
+    padding: 10px;
+  }
+
+  .onetext h1, .twotext h5 {
+    font-size: 24px;
+  }
+
+  .Paster {
+    padding: 10px;
+  }
+
+  .Pastebutton button {
+    width: 100%;
+  }
+
+  .secondtext {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .secondtext h1 {
+    font-size: 40px;
+  }
+
+  .places {
+    padding: 10px;
+  }
+
+  .firstplace, .secondtplace, .thirdplace, .fourthplace {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstdescription, .seconddescription, .thirddescription, .fourthdescription {
+    width: 100%;
+  }
+
+  .firstb button, .secondb button, .thirdb button, .fourthb button {
+    width: 100%;
+  }
+
+  .currentprogramtext {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .currentprogramtext h1 {
+    font-size: 40px;
+  }
+
+  .reviewtext {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reviewtext h1 {
+    font-size: 40px;
+  }
+
+  .addallbutton {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .addreview button, .allreview button {
+    width: 100%;
+  }
+
+  .navbox {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .networks, .support, .agreement, .forum {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .link {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .Shapka {
+    height: auto;
+    padding: 10px;
+  }
+
+  .button, .LogIn {
+    flex-direction: column;
+  }
+
+  .button > div, .LogIn > div {
+    margin: 10px 0;
+  }
+
+  .FotoL, .FotoR {
+    width: 100%;
+  }
+
+  .first {
+    padding: 10px;
+  }
+
+  .onetext h1, .twotext h5 {
+    font-size: 24px;
+  }
+
+  .Paster {
+    padding: 10px;
+  }
+
+  .Pastebutton button {
+    width: 100%;
+  }
+
+  .secondtext {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .secondtext h1 {
+    font-size: 30px;
+  }
+
+  .places {
+    padding: 10px;
+  }
+
+  .firstplace, .secondtplace, .thirdplace, .fourthplace {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstdescription, .seconddescription, .thirddescription, .fourthdescription {
+    width: 100%;
+  }
+
+  .firstb button, .secondb button, .thirdb button, .fourthb button {
+    width: 100%;
+  }
+
+  .currentprogramtext {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .currentprogramtext h1 {
+    font-size: 30px;
+  }
+
+  .reviewtext {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reviewtext h1 {
+    font-size: 30px;
+  }
+
+  .addallbutton {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .addreview button, .allreview button {
+    width: 100%;
+  }
+
+  .navbox {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .networks, .support, .agreement, .forum {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .link {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.second {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.Shapkabutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1000px;
+  height: 75px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+.Shapkabutton button {
+  background-color: #E6E7ED;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secondtext {
+  margin-top: 20px;
+  text-align: center;
+  width: 600px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.secondtext h1 {
+  margin-top: 0;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.firstplace, .secondtplace, .thirdplace, .fourthplace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.firstdescription, .seconddescription, .thirddescription, .fourthdescription {
+  padding: 20px;
+}
+
+.firstb button, .secondb button, .thirdb button, .fourthb button {
+  color: white;
+  background-color: black;
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.places img {
+  border-radius: 20px;
+}
+
+.currentprogram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 850px;
+  padding: 20px;
+}
+
+.currentprogramtext {
+  margin-top: 20px;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.currentprogramtext h1 {
+  margin-top: 0;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.currentprogramscrol {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.currentprogramtext, .currentprogramscrol {
+  margin-bottom: 20px;
+}
+
+.currentprogramscrol::-webkit-scrollbar {
+  display: none;
+}
+
+.currentprogramscroling {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.firstprogram, .secondprogram, .thirdprogram {
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.firstprogram {
+  width: 320px;
+}
+
+.secondprogram {
+  width: 350px;
+}
+
+.thirdprogram {
+  width: 380px;
+}
+
+.firsttextimg, .secondtextimg, .thirdtextimg {
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  height: 75px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 850px;
+  padding: 20px;
+}
+
+.reviewtext {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.reviewtext h1 {
+  margin-top: 0;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.rev {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.reviewtext, .rev {
+  margin-bottom: 20px;
+}
+
+.addallbutton {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.addreview button {
+  background-color: black;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.allreview button {
+  background-color: black;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.abouttheprogram {
+  width: 100%;
+  max-width: 1420px;
+  background-color: #410CD9;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 0;
+}
+
+.networks, .support, .agreement, .forum {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 250px;
+}
+
+.networks h1, .support h1, .agreement h1, .forum h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.networks p, .support p, .agreement p, .forum p {
+  color: #707177;
+}
+
+.networksfoto {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link {
+  margin-left: 0;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+.link p {
+  color: white;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .navbox {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .networks, .support, .agreement, .forum {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .networks h1, .support h1, .agreement h1, .forum h1 {
+    font-size: 24px;
+  }
+
+  .networks p, .support p, .agreement p, .forum p {
+    font-size: 14px;
+  }
+
+  .networksfoto {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbox {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .networks, .support, .agreement, .forum {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .networks h1, .support h1, .agreement h1, .forum h1 {
+    font-size: 20px;
+  }
+
+  .networks p, .support p, .agreement p, .forum p {
+    font-size: 12px;
+  }
+
+  .networksfoto {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
